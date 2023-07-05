@@ -1,26 +1,33 @@
 import { Menu } from "antd";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+
+const navbarItems = [
+  { key: 1, label: "Page 1", url: "/page-1" },
+  { key: 2, label: "Page 2", url: "/page-2" },
+  { key: 3, label: "Page 3", url: "/page-3" },
+];
 
 function Navbar() {
   const navigate = useNavigate();
-  const navbarItems = [
-    { key: 1, label: "Page 1", url: "/page-1" },
-    { key: 2, label: "Page 2", url: "/page-2" },
-    { key: 3, label: "Page 3", url: "/page-3" },
-  ];
+  const [selectedNavbarItem, setSelectedNavbarItem] = useState(navbarItems[0]);
 
   const onSelectHandler = (e) => {
     const selectedNavbarItem = navbarItems.find(
       (item) => item.key.toString() === e.key
     );
-    navigate(selectedNavbarItem.url);
+    setSelectedNavbarItem(selectedNavbarItem);
   };
+
+  useEffect(() => {
+    navigate(selectedNavbarItem.url);
+    document.title = selectedNavbarItem.label;
+  }, [selectedNavbarItem]);
 
   return (
     <div>
       <Menu
-        theme="dark"
+        style={{ background: "#414141" }}
         mode="horizontal"
         defaultSelectedKeys={[1]}
         items={navbarItems}
