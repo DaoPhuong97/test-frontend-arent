@@ -15,9 +15,10 @@ const headerStyles = {
 };
 
 const contentStyles = {
-  height: "100vh",
+  minHeight: "100vh",
   margin: 0,
   padding: 0,
+  background: "#ffffff"
 };
 
 const footerStyles = {

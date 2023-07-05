@@ -27,7 +27,7 @@ function Navbar() {
   return (
     <div>
       <Menu
-        style={{ background: "#414141" }}
+        style={{ background: "#414141"}}
         mode="horizontal"
         defaultSelectedKeys={[1]}
         items={navbarItems}
