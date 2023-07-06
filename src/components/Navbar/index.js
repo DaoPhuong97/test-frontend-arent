@@ -10,7 +10,7 @@ const navbarItems = [
 
 function Navbar() {
   const navigate = useNavigate();
-  const [selectedNavbarItem, setSelectedNavbarItem] = useState(navbarItems[1]);
+  const [selectedNavbarItem, setSelectedNavbarItem] = useState(navbarItems[2]);
 
   const onSelectHandler = (e) => {
     const selectedNavbarItem = navbarItems.find(
@@ -27,7 +27,7 @@ function Navbar() {
   return (
     <div>
       <Menu
-        style={{ background: "#414141"}}
+        style={{ background: "#414141" }}
         mode="horizontal"
         defaultSelectedKeys={[1]}
         items={navbarItems}
