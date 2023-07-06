@@ -10,7 +10,7 @@ const navbarItems = [
 
 function Navbar() {
   const navigate = useNavigate();
-  const [selectedNavbarItem, setSelectedNavbarItem] = useState(navbarItems[0]);
+  const [selectedNavbarItem, setSelectedNavbarItem] = useState(navbarItems[1]);
 
   const onSelectHandler = (e) => {
     const selectedNavbarItem = navbarItems.find(

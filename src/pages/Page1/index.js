@@ -1,8 +1,8 @@
 import React from "react";
 import { CardRow, Container, FlexContainer } from "./styles";
-import { Card } from "antd";
 import FoodCard from "./FoodCard";
 import HexaCard from "./HexaCard";
+import LineChart from "../Page2/Chart";
 
 const foodCards1 = [
   { title: "05.21.Morning", url: "images/m01.jpg" },
@@ -39,10 +39,11 @@ function Page1() {
             width: "60%",
             display: "inline-block",
             textAlign: "center",
-            flex: 10
+            flex: 10,
           }}
         >
-          <img
+          <LineChart />
+          {/* <img
             style={{
               width: "100%",
               maxHeight: "19.75rem",
@@ -50,7 +51,7 @@ function Page1() {
             }}
             src={require("../../assets/images/body-fat.png")}
             alt=""
-          />
+          /> */}
         </div>
       </Container>
       <div style={{ width: "calc(100% - 320px)", margin: "0 auto" }}>
@@ -63,7 +64,7 @@ function Page1() {
           }}
         >
           {hesaCards.map((hexa) => (
-            <div style={{margin: "0 32px"}}>
+            <div style={{ margin: "0 32px" }}>
               <HexaCard src={hexa.url} title={hexa.title} />
             </div>
           ))}
