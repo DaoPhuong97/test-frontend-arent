@@ -19,27 +19,15 @@ function MyExcercise({ myExcercise }) {
       <ExcerciseList id="style-2">
         <ExcerciseItem>
           {myExcercise.excercies.map((item) => (
-            <li
-              style={{
-                width: "44%",
-                borderBottom: "1px solid #777777",
-                marginRight: "25px",
-              }}
-            >
-              <ExcerciseNote
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "baseline",
-                  paddingRight: "30px",
-                  paddingBottom: "8px",
-                }}
-              >
+            <li className="my-excercise-wrapper">
+              <ExcerciseNote>
                 <div>
-                  <p style={{ margin: "8px 0" }}>{item.title}</p>
-                  <span style={{ color: "#FFCC21" }}>{item.kcal}kcal</span>
+                  <p className="my-excercise-title">{item.title}</p>
+                  <span className="my-excercise-type ">{item.kcal}kcal</span>
                 </div>
-                <div style={{ color: "#FFCC21" }}>{item.time} min</div>
+                <div className="my-excercise-type excercise-time">
+                  {item.time} min
+                </div>
               </ExcerciseNote>
             </li>
           ))}

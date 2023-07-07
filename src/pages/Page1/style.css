@@ -51,6 +51,32 @@
 }
 .left-part {
   flex: 7;
+  position: relative;
+}
+.percent-date-wrapper {
+  position: absolute;
+  display: block;
+  left: 19rem;
+  top: 5rem;
+}
+.block-percent {
+  position: absolute;
+  top: 5rem;
+  left: 2.5rem;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 0px 6px 0px #fc7400;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+}
+.date-percent {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+}
+.percent-number {
+  font-size: 1.5625rem;
+  line-height: 1.875rem;
 }
 .line-chart-right {
   background: #2e2e2e;

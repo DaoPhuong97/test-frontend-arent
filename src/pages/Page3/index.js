@@ -12,9 +12,9 @@ import ScrollToTopButton from "../../components/ScrollToTopButton";
 
 const recommendData = [
   { title: "RECOMMENDED COLUMN", description: "オススメ" },
-  { title: "RECOMMENDED COLUMN", description: "オススメ" },
-  { title: "RECOMMENDED COLUMN", description: "オススメ" },
-  { title: "RECOMMENDED COLUMN", description: "オススメ" },
+  { title: "RECOMMENDED DIET", description: "ダイエット" },
+  { title: "RECOMMENDED BEAUTY", description: "美容" },
+  { title: "RECOMMENDED HEALTH", description: "健康" },
 ];
 
 const medias1 = [

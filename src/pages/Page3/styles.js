@@ -63,6 +63,9 @@ export const MediaCardStyle = styled.div`
   flex-direction: column;
   .title {
     height: 48px;
+    color: #414141;
+    font-size: 0.9375rem;
+    font-family: Hiragino Kaku Gothic Pro;
   }
   .image {
     flex-shrink: 0;
@@ -93,5 +96,6 @@ export const MediaCardStyle = styled.div`
     font-weight: 300;
     line-height: 22px;
     letter-spacing: 0.06px;
+    font-family: Hiragino Kaku Gothic Pro;
   }
 `;

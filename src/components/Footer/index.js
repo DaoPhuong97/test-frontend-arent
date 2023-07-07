@@ -1,5 +1,5 @@
 import React from "react";
-import { FooterContainer } from "./styles";
+import { FooterContainer, StyledItemFooter } from "./styles";
 
 const footerItems = [
   {
@@ -31,7 +31,7 @@ function FooterComponent() {
   return (
     <FooterContainer>
       {footerItems.map((item) => (
-        <div style={{ marginRight: "50px" }}>{item.label}</div>
+        <StyledItemFooter>{item.label}</StyledItemFooter>
       ))}
     </FooterContainer>
   );

@@ -34,6 +34,13 @@ function Page1() {
             src={require("../../assets/images/d01.jpg")}
             alt=""
           />
+          <div className="percent-date-wrapper">
+            <img className="food-card-img" src={"images/percent.svg"} alt="" />
+            <div className="block-percent">
+              <span className="date-percent">05/21 </span>
+              <span className="percent-number">75%</span>
+            </div>
+          </div>
         </div>
         <div className="line-chart-right">
           <LineChart />
