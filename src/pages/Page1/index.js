@@ -28,36 +28,21 @@ function Page1() {
   return (
     <div>
       <Container>
-        <div style={{ flex: 7 }}>
+        <div className="left-part">
           <img
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            className="food-card-img"
             src={require("../../assets/images/d01.jpg")}
             alt=""
           />
         </div>
-        <div
-          style={{
-            background: "#2E2E2E",
-            width: "60%",
-            display: "inline-block",
-            textAlign: "center",
-            flex: 10,
-          }}
-        >
+        <div className="line-chart-right">
           <LineChart />
         </div>
       </Container>
-      <div style={{ width: "calc(100% - 320px)", margin: "0 auto" }}>
-        <div
-          style={{
-            display: "flex",
-            padding: "22px 0",
-            justifyContent: "center",
-            margin: "0 auto",
-          }}
-        >
+      <div>
+        <div className="hexa-card">
           {hesaCards.map((hexa) => (
-            <div style={{ margin: "0 32px" }}>
+            <div className="hexa-card-item">
               <HexaCard src={hexa.url} title={hexa.title} />
             </div>
           ))}

@@ -12,10 +12,10 @@ function FoodCard({ src, title }) {
         position: "relative",
       }}
     >
-      <div style={{ background: "#FFCC21",width: "7.5rem", height: "2rem", flexShrink: "0", position: "absolute", bottom: "0" }}>
-        <div style={{color: "#FFF",fontSize: "0.9375rem", fontWeight: "400", paddingTop: "0.25rem", textAlign: "center" }}>{title}</div>
+      <div className="food-card-wrapper">
+        <div className="food-card-title">{title}</div>
       </div>
-      <img style={{ width: "100%", height: "100%", objectFit: "cover" }} src={src} alt="" />
+      <img className="food-card-img" src={src} alt="" />
     </StyledCard>
   );
 }
