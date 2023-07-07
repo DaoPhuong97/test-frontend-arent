@@ -6,8 +6,10 @@ function RecordCard({ imgSrc, title, buttonTitle }) {
     <StyledRecordCard>
       <StyledImage src={imgSrc} alt=""></StyledImage>
       <AbsoluteContainer>
-        <label>{title}</label>
-        <p>{buttonTitle}</p>
+        <label className="record-title">{title}</label>
+        <div className="description-wrapper">
+          <p className="note">{buttonTitle}</p>
+        </div>
       </AbsoluteContainer>
     </StyledRecordCard>
   );

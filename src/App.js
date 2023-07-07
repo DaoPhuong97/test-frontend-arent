@@ -6,6 +6,7 @@ import Page1 from "./pages/Page1";
 import Page2 from "./pages/Page2";
 import Page3 from "./pages/Page3";
 import Navbar from "./components/Navbar";
+import FooterComponent from "./components/Footer";
 const { Header, Footer, Content } = Layout;
 
 const headerStyles = {
@@ -15,14 +16,18 @@ const headerStyles = {
 };
 
 const contentStyles = {
-  minHeight: "100vh",
+  minHeight: "88vh",
   margin: 0,
   padding: 0,
-  background: "#ffffff"
+  background: "#ffffff",
 };
 
 const footerStyles = {
   background: "#414141",
+  height: "128px",
+  display: "flex",
+  alignItems: "center",
+  padding: "24px 0",
 };
 
 function App() {
@@ -39,7 +44,9 @@ function App() {
             <Route path="/page-3" element={<Page3 />} />
           </Routes>
         </Content>
-        <Footer style={footerStyles}>Put anything in footer</Footer>
+        <Footer style={footerStyles}>
+          <FooterComponent></FooterComponent>
+        </Footer>
       </Layout>
     </div>
   );

@@ -11,7 +11,7 @@ export const recordsMock = [
   },
   {
     src: "images/MyRecommend-3.jpg",
-    title: "BODY RECORD",
+    title: "MY DIARY",
     buttonTitle: "自分の日記",
   },
 ];

@@ -18,7 +18,6 @@ export const CardRow = styled.div`
   margin: 4px;
 `;
 
-
 export const StyledCard = styled(Card)`
   &.ant-card {
     border: none;

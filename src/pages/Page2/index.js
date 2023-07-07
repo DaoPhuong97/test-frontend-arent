@@ -13,12 +13,13 @@ import DiaryCard from "./DiaryCard";
 import MyExcercise from "./MyExcercise";
 import LineChart from "./Chart";
 import {
-  // chartDataMock,
   diaries1Mock,
   diaries2Mock,
   myExcerciseMock,
   recordsMock,
 } from "./ mockData";
+import FooterButton from "../../components/FooterButton";
+import ScrollToTopButton from "../../components/ScrollToTopButton";
 
 function Page2() {
   return (
@@ -69,6 +70,11 @@ function Page2() {
           </DiaryCardWrapper>
         ))}
       </DiaryCardsContainer>
+      <div className="flex-center space-btn">
+        <FooterButton>コラムをもっと見る</FooterButton>
+      </div>
+
+      <ScrollToTopButton />
     </div>
   );
 }

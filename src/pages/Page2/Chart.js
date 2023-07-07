@@ -7,7 +7,7 @@ const getOptions = () => ({
     type: "line",
     width: 960,
     height: 300,
-    backgroundColor: "#414141",
+    backgroundColor: "#2E2E2E",
     boderColor: "#fff",
     annotations: {
       visible: false,

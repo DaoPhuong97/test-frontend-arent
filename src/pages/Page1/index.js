@@ -3,6 +3,8 @@ import { CardRow, Container, FlexContainer } from "./styles";
 import FoodCard from "./FoodCard";
 import HexaCard from "./HexaCard";
 import LineChart from "../Page2/Chart";
+import FooterButton from "../../components/FooterButton";
+import ScrollToTopButton from "../../components/ScrollToTopButton";
 
 const foodCards1 = [
   { title: "05.21.Morning", url: "images/m01.jpg" },
@@ -43,15 +45,6 @@ function Page1() {
           }}
         >
           <LineChart />
-          {/* <img
-            style={{
-              width: "100%",
-              maxHeight: "19.75rem",
-              objectFit: "contain",
-            }}
-            src={require("../../assets/images/body-fat.png")}
-            alt=""
-          /> */}
         </div>
       </Container>
       <div style={{ width: "calc(100% - 320px)", margin: "0 auto" }}>
@@ -85,6 +78,10 @@ function Page1() {
           ))}
         </FlexContainer>
       </div>
+      <div className="flex-center space-btn">
+        <FooterButton>コラムをもっと見る</FooterButton>
+      </div>
+      <ScrollToTopButton />
     </div>
   );
 }

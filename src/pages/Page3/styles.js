@@ -41,7 +41,10 @@ export const RecommendCardStyle = styled.div`
 `;
 
 export const RecommendCardWrapper = styled.div`
-  margin: 0 16px;
+  margin: 0 32px 0 0;
+  &:last-child {
+    margin-right: 0;
+  }
 `;
 
 export const MediaCardContainer = styled.div`
@@ -49,8 +52,9 @@ export const MediaCardContainer = styled.div`
   width: 100%;
   justify-content: center;
 `;
+
 export const MediaCardWrapper = styled.div`
-  margin: 10px 8px;
+  margin: 10px 4px;
 `;
 export const MediaCardStyle = styled.div`
   width: 234px;
@@ -90,13 +94,4 @@ export const MediaCardStyle = styled.div`
     line-height: 22px;
     letter-spacing: 0.06px;
   }
-`;
-
-export const FooterButton = styled.button`
-  width: 296px;
-  height: 56px;
-  color: #fff;
-  background: linear-gradient(33deg, #ffcc21 0%, #ff963c 100%);
-  border: none;
-  border-radius: 6px;
 `;

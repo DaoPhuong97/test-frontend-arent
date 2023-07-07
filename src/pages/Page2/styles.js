@@ -4,7 +4,9 @@ import styled from "styled-components";
 export const AbsoluteContainer = styled.div`
   position: absolute;
   top: 107px;
-  left: 64px;
+  left: 32px;
+  width: 180px;
+  text-align: center;
 `;
 export const StyledImage = styled.img`
   width: 100%;
@@ -12,7 +14,7 @@ export const StyledImage = styled.img`
   background-size: contain;
   background-repeat: no-repeat;
   object-fit: cover;
-  opacity: 0.5;
+  opacity: 0.25;
   filter: brightness(0.5);
 `;
 export const RecordCardContainer = styled.div`
@@ -29,6 +31,7 @@ export const StyledRecordCard = styled.div`
   border: 19px solid #ffcc21;
   display: block;
   position: relative;
+  background-color: #414141;
 `;
 
 // ---------------------------------------------
@@ -63,9 +66,34 @@ export const DiaryCardWrapper = styled.div`
   margin: 6px 6px;
 `;
 
-export const DiaryCardDate = styled.div``;
-export const DiaryCardTime = styled.div``;
-export const DiaryCardDescription = styled.div``;
+export const DiaryCardDate = styled.div`
+  color: #414141;
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+  letter-spacing: 0.00563rem;
+`;
+export const DiaryCardTime = styled.div`
+  color: #414141;
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+  letter-spacing: 0.00563rem;
+`;
+export const DiaryCardDescription = styled.div`
+  color: #414141;
+  font-family: Hiragino Kaku Gothic Pro;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.0625rem;
+  letter-spacing: 0.00375rem;
+  padding-top: 18px;
+`;
 
 export const MyExcerciseCard = styled.div`
   display: flex;

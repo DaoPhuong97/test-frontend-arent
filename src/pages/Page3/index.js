@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  FooterButton,
   MediaCardContainer,
   MediaCardWrapper,
   RecomendCardContainer,
@@ -8,6 +7,8 @@ import {
 } from "./styles";
 import RecommendCard from "./RecommendCard";
 import MediaCard from "./MediaCard";
+import FooterButton from "../../components/FooterButton";
+import ScrollToTopButton from "../../components/ScrollToTopButton";
 
 const recommendData = [
   { title: "RECOMMENDED COLUMN", description: "オススメ" },
@@ -24,19 +25,19 @@ const medias1 = [
     time: "2021.05.17 23:25",
   },
   {
-    imageUrl: "images/column-1.jpg",
+    imageUrl: "images/column-2.jpg",
     title: "魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…",
     subTitle: "#魚料理  #和食  #DHA",
     time: "2021.05.17 23:25",
   },
   {
-    imageUrl: "images/column-1.jpg",
+    imageUrl: "images/column-3.jpg",
     title: "魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…",
     subTitle: "#魚料理  #和食  #DHA",
     time: "2021.05.17 23:25",
   },
   {
-    imageUrl: "images/column-1.jpg",
+    imageUrl: "images/column-4.jpg",
     title: "魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…",
     subTitle: "#魚料理  #和食  #DHA",
     time: "2021.05.17 23:25",
@@ -45,25 +46,25 @@ const medias1 = [
 
 const medias2 = [
   {
-    imageUrl: "images/column-1.jpg",
+    imageUrl: "images/column-5.jpg",
     title: "魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…",
     subTitle: "#魚料理  #和食  #DHA",
     time: "2021.05.17 23:25",
   },
   {
-    imageUrl: "images/column-1.jpg",
+    imageUrl: "images/column-6.jpg",
     title: "魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…",
     subTitle: "#魚料理  #和食  #DHA",
     time: "2021.05.17 23:25",
   },
   {
-    imageUrl: "images/column-1.jpg",
+    imageUrl: "images/column-7.jpg",
     title: "魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…",
     subTitle: "#魚料理  #和食  #DHA",
     time: "2021.05.17 23:25",
   },
   {
-    imageUrl: "images/column-1.jpg",
+    imageUrl: "images/column-8.jpg",
     title: "魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…",
     subTitle: "#魚料理  #和食  #DHA",
     time: "2021.05.17 23:25",
@@ -106,9 +107,11 @@ function Page3() {
         ))}
       </MediaCardContainer>
 
-      <MediaCardContainer>
+      <div className="flex-center space-btn">
         <FooterButton>コラムをもっと見る</FooterButton>
-      </MediaCardContainer>
+      </div>
+
+      <ScrollToTopButton />
     </div>
   );
 }
